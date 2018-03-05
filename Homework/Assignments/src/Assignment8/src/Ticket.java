@@ -1,14 +1,27 @@
 
 public class Ticket {
 
-	public int ticketnum; //Ticket number
+	public int ticketNum; //Ticket number
 	
-	public int ticketPrice;
+	public double ticketPrice; //The price per ticket
 	
-	public int getPrice() {
-		
-		
-		
+	//Construct the ticket class
+	public Ticket(double price, int ticketNum) {
+		this.ticketPrice = price;
+		this.ticketNum = ticketNum;
 	}
+	
+	//Method to get the ticket price
+	public double getPrice() {
+		
+		return ticketPrice;
+	}
+	
+	//Method to get the ticket number
+	public int getNumber() {
+		
+		return ticketNum;
+	}
+
 	
 }
